@@ -35,9 +35,9 @@
     padding: 40px;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    grid-template-columns: repeat(4, minmax(220px, 1fr)); /* 每行 4 个视频 */
     gap: 30px;
-
     justify-content: center;
     align-items: center;
   
@@ -302,7 +302,6 @@
 
 
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Method</h2>
@@ -545,12 +544,12 @@
             </div>
             
             <div class="video-item">
-              <video src="./static/videos/js/MCTS/blocks_stack_hard/blocks_stack_hard_20250515_115904.mp4"  autoplay muted loop playsinline controls></video>
+              <video src="./static/videos/js/MCTS/blocks_stack_hard/blocks_stack_hard_20250515_122243.mp4"  autoplay muted loop playsinline controls></video>
               <div class="caption">blocks_stack_hard(3)</div>
             </div>
             
             <div class="video-item">
-              <video src="./static/videos/js/MCTS/blocks_stack_hard/blocks_stack_hard_20250515_120052.mp4"  autoplay muted loop playsinline controls></video>
+              <video src="./static/videos/js/MCTS/blocks_stack_hard/blocks_stack_hard_20250515_185848.mp4"  autoplay muted loop playsinline controls></video>
               <div class="caption">blocks_stack_hard(4)</div>
             </div>
 
@@ -584,137 +583,125 @@
         </div>
       </div>
 
-
-
-
-
-
-<!-- <br> -->
-<!-- <br> -->
 <br>
-      <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <!-- <h2 class="title is-3">Videos of DP & DP3 deployment</h2> -->
-            <h2 class="title is-3">DP & DP3 Deployment</h2>
-            
-            <!-- 这边不写文字了？ -->
-            <!-- <div class="content has-text-justified">
-              <p>
-                We trained DP & DP3 policies on the collected demonstration data.
-              </p>
-            </div> -->
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-3">Videos of DP & DP3 deployment</h2> -->
+          <h2 class="title is-3">DP & DP3 Deployment</h2>
+          
+          <!-- 这边不写文字了？ -->
+          <!-- <div class="content has-text-justified">
+            <p>
+              We trained DP & DP3 policies on the collected demonstration data.
+            </p>
+          </div> -->
 
-            <!-- <div>
-            
-              You can download our dataset here: <a href="https://huggingface.co/datasets/TeleEmbodied/ALMI-X">ALMI-X</a>.<br>
-            </div> -->
+          <!-- <div>
+          
+            You can download our dataset here: <a href="https://huggingface.co/datasets/TeleEmbodied/ALMI-X">ALMI-X</a>.<br>
+          </div> -->
 
-            <div style="display: flex; justify-content: center; align-items: center;">
-              <img style="max-width: 100%; height: auto;" src="./static/images/dpdp3.png" alt="图片1">
-            </div>
-            
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img style="max-width: 100%; height: auto;" src="./static/images/dpdp3.png" alt="图片1">
           </div>
+          
         </div>
-<br>
-<br>
+      </div>
+      <br>
+      <br>
 
-<!-- dp and dp3 videos -->
-        <div class="columns is-centered has-text-centered">
-          <!-- <h3 class="title is-4">DP3 and DP Performance Videos</h3> -->
-          <h3 class="title is-4">DP3 Performance Videos</h3>
-        </div>
-        </div>
-<!-- <br>   -->
+      <!-- dp and dp3 videos -->
+      <div class="columns is-centered has-text-centered">
+        <!-- <h3 class="title is-4">DP3 and DP Performance Videos</h3> -->
+        <h3 class="title is-4">DP3 Performance Videos</h3>
+      </div>
+    </div>
+      <!-- <br>   -->
         <!-- <h4 class="title is-6">3D Diffusion Policy:</h4> -->
 
-        <div class="container is-max-desktop" style="display: flex;justify-content: center; align-items: center;">
-          <!-- Abstract. -->
-          <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center; align-items: center;">
-            <div class="column is-four-fifths" style="display: flex; justify-content: center; align-items: center;">
-  
-  
-  
-            <div class="grid-container" >
-              <!-- 示例 20 个视频项 -->
-              <!-- 你可以替换 video src 为自己的路径，替换 caption 为提示语 -->
-              <!-- 这里只演示前两个，剩下你可以复制粘贴扩展 -->
-              <div class="video-item">
-                <video src="./static/videos/dp3/cup_pour_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">cup_pour_easy (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/cup_pour_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">cup_pour_easy (fail)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/dual_bottles_pick_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">dual_bottles_pick_easy (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/dual_bottles_pick_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">dual_bottles_pick_easy (fail)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/dual_bottles_pick_hard_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">dual_bottles_pick_hard (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/dual_bottles_pick_hard_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">dual_bottles_pick_hard (fail)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/empty_cup_place_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">empty_cup_place (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/empty_cup_place_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">empty_cup_place (fail)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/open_box_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">open_box_easy (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/open_box_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">open_box_easy (fail)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/open_drawer_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">open_drawer (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/open_drawer_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">open_drawer (fail)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/open_laptop_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">open_laptop_easy (success)</div>
-              </div>
-          
-              <div class="video-item">
-                <video src="./static/videos/dp3/open_laptop_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
-                <div class="caption">open_laptop_easy (fail)</div>
-              </div>
-                    
+    <div class="container is-max-desktop" style="display: flex;justify-content: center; align-items: center;">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center; align-items: center;">
+        <div class="column is-four-fifths" style="display: flex; justify-content: center; align-items: center;">
+          <div class="grid-container" >
+            <!-- 示例 20 个视频项 -->
+            <!-- 你可以替换 video src 为自己的路径，替换 caption 为提示语 -->
+            <!-- 这里只演示前两个，剩下你可以复制粘贴扩展 -->
+            <div class="video-item">
+              <video src="./static/videos/dp3/cup_pour_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">cup_pour_easy (success)</div>
             </div>
-              
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/cup_pour_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">cup_pour_easy (fail)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/dual_bottles_pick_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">dual_bottles_pick_easy (success)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/dual_bottles_pick_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">dual_bottles_pick_easy (fail)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/dual_bottles_pick_hard_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">dual_bottles_pick_hard (success)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/dual_bottles_pick_hard_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">dual_bottles_pick_hard (fail)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/empty_cup_place_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">empty_cup_place (success)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/empty_cup_place_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">empty_cup_place (fail)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/open_box_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_box_easy (success)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/open_box_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_box_easy (fail)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/open_drawer_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_drawer (success)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/open_drawer_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_drawer (fail)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/open_laptop_easy_suc.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_laptop_easy (success)</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/dp3/open_laptop_easy_fail.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_laptop_easy (fail)</div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
 
         <!-- <h4 class="title is-6">Diffusion Policy:</h4> -->
@@ -777,17 +764,116 @@
           </div>
         </div>  -->
     
-
+    <!-- Title -->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Scene Scaling</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Video -->
+    <div class="container is-max-desktop" style="display: flex;justify-content: center; align-items: center;">
+      <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center; align-items: center;">
+        <div class="column is-four-fifths" style="display: flex; justify-content: center; align-items: center;">
+          <div class="grid-container" >
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/block_handover.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">block_handover</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/blocks_stack_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">blocks_stack_easy</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/blocks_stack_hard.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">blocks_stack_hard</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/close_box_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">close_box_easy</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/close_box_hard.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">close_box_hard</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/close_drawer.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">close_drawer</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/close_laptop_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">close_laptop_easy</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/close_laptop_hard.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">close_laptop_hard</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/cup_pour_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">cup_pour_easy</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/dual_bottles_pick_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">dual_bottles_pick_easy</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/dual_bottles_pick_hard.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">dual_bottles_pick_hard</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/empty_cup_place.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">empty_cup_place</div>
+            </div>
+        
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/handover_and_storage_cooperation.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">handover_and_storage_cooperation</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/handover_and_storage.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">handover_and_storage</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/open_box_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_box_easy</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/open_box_hard.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_box_hard</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/open_drawer.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_drawer</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/open_laptop_easy.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_laptop_easy</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/open_laptop_hard.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">open_laptop_hard</div>
+            </div>
+            <div class="video-item">
+              <video src="./static/videos/scene_scaling/pyramid_stack.mp4"  autoplay muted loop playsinline controls></video>
+              <div class="caption">pyramid_stack</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
-
-
-
-
-
-
-
-
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
